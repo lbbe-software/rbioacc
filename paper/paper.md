@@ -27,9 +27,6 @@ affiliations:
 - name: Corresponding author
   index: 2
 date: "18 December 2021"
-output:
-  pdf_document:
-    extra_dependencies: ["float"]
 bibliography: biblio.bib
 ---
 
