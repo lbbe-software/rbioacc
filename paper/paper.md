@@ -24,7 +24,7 @@ authors:
 affiliations:
 - name: University of Lyon, University Lyon 1, CNRS UMR5558, Laboratory de Biometry and Evolutionary Biology, 69100 Villeurbanne, France.
   index: 1
-- name: Corresponding author ([email](mailto:sandrine.charles@univ-lyon1.fr?subject=morse))
+- name: Corresponding author
   index: 2
 date: "18 December 2021"
 output:
