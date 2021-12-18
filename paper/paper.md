@@ -8,9 +8,9 @@ tags:
   - Environmental Risk Assessment
   - Bayesian inference
 authors:
-- name: Aude Ratier
+- name: Aude Ratier^[co-first author]
   affiliation: 1
-- name: Virgile Baudrot
+- name: Virgile Baudrot^[co-first author]
   affiliation: 1
 - Milena Kaag
   affiliation: 1
@@ -20,7 +20,7 @@ authors:
   affiliation: 1
 - name: Sandrine Charles
   orcid: 0000-0003-4604-0166
-  affiliation: 1, 2
+  affiliation: "1, 2"
 affiliations:
 - name: University of Lyon, University Lyon 1, CNRS UMR5558, Laboratory de Biometry and Evolutionary Biology, 69100 Villeurbanne, France.
   index: 1
