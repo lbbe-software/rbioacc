@@ -1,12 +1,5 @@
 ---
 title:  "`rbioacc`: an R-package to analyse toxicokinetic data"
-author:
-- Aude Ratier^[University of Lyon, University Lyon 1, CNRS UMR5558, Laboratory de Biometry and Evolutionary Biology, 69100 Villeurbanne, France.]
-- Virgile Baudrot*
-- Miléna Kaag*
-- Aurélie Siberchicot*
-- Christelle Lopes*
-- Sandrine Charles*^[Corresponding author, sandrine.charles@univ-lyon1.fr]
 tags:
   - Shiny
   - R
@@ -14,13 +7,30 @@ tags:
   - Toxicokinetic
   - Environmental Risk Assessment
   - Bayesian inference
+authors:
+- name: Aude Ratier
+  affiliation: 1
+- name: Virgile Baudrot
+  affiliation: 1
+- Miléna Kaag
+  affiliation: 1
+- Aurélie Siberchicot
+  affiliation: 1
+- Christelle Lopes
+  affiliation: 1
+- name: Sandrine Charles
+  orcid: 0000-0003-4604-0166
+  affiliation: 1, 2
+affiliations:
+- name: University of Lyon, University Lyon 1, CNRS UMR5558, Laboratory de Biometry and Evolutionary Biology, 69100 Villeurbanne, France.
+  index: 1
+- name: Corresponding author ([email](mailto:sandrine.charles@univ-lyon1.fr?subject=morse))
+  index: 2
 date: "16 December 2021"
 output:
   pdf_document:
     extra_dependencies: ["float"]
 bibliography: biblio.bib
-aas-doi: 10.3847/xxxxx <- update this with the DOI from AAS once you know it.
-aas-journal: Astrophysical Journal <- The name of the AAS journal.
 ---
 
 ## Summary
