@@ -12,9 +12,9 @@ authors:
   affiliation: 1
 - name: Virgile Baudrot^[co-first author]
   affiliation: 1
-- Miléna Kaag
+- Milena Kaag
   affiliation: 1
-- Aurélie Siberchicot
+- Aurelie Siberchicot
   affiliation: 1
 - Christelle Lopes
   affiliation: 1
