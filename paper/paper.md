@@ -1,12 +1,12 @@
 ---
 title:  "`rbioacc`: an R-package to analyse toxicokinetic data"
 tags:
-  - Shiny
-  - R
-  - Ecotoxicology
-  - Toxicokinetic
-  - Environmental Risk Assessment
-  - Bayesian inference
+- Shiny
+- R
+- Ecotoxicology
+- Toxicokinetic
+- Environmental Risk Assessment
+- Bayesian inference
 authors:
 - name: Aude Ratier^[co-first author]
   affiliation: 1
