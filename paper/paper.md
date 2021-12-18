@@ -13,9 +13,9 @@ authors:
 - name: Virgile Baudrot^[co-first author]
   affiliation: 1
 - Miléna Kaag
-affiliation: 1
+  affiliation: 1
 - Aurélie Siberchicot
-affiliation: 1
+  affiliation: 1
 - Christelle Lopes
   affiliation: 1
 - name: Sandrine Charles
@@ -26,7 +26,7 @@ affiliations:
   index: 1
 - name: Corresponding author ([email](mailto:sandrine.charles@univ-lyon1.fr?subject=morse))
   index: 2
-date: "16 December 2021"
+date: "18 December 2021"
 output:
   pdf_document:
     extra_dependencies: ["float"]
