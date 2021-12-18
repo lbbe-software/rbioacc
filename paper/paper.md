@@ -12,10 +12,10 @@ authors:
   affiliation: 1
 - name: Virgile Baudrot^[co-first author]
   affiliation: 1
-- Milena Kaag
-  affiliation: 1
-- Aurelie Siberchicot
-  affiliation: 1
+- Miléna Kaag
+affiliation: 1
+- Aurélie Siberchicot
+affiliation: 1
 - Christelle Lopes
   affiliation: 1
 - name: Sandrine Charles
