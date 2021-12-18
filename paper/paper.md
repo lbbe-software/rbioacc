@@ -12,9 +12,9 @@ authors:
   affiliation: 1
 - name: Virgile Baudrot
   affiliation: 1
-- Miléna Kaag
+- Milena Kaag
   affiliation: 1
-- Aurélie Siberchicot
+- Aurelie Siberchicot
   affiliation: 1
 - Christelle Lopes
   affiliation: 1
@@ -92,7 +92,7 @@ Package `rbioacc` is also linked to C++. C++ is used for speeding up calculation
 
 ### Toxicokinetic analysis
 
-To illustrate the use of package `rbioacc`, we will use two standard bioaccumulation data sets available in the package. The first example is data collected from a laboratory bioaccumulation test on fish *Oncorhynchus promelas* exposed to three different concentrations of a highly hydrophobic compound in spiked water during 49 days. There was one replicate per concentration. The duration of the depuration phase was 97 days. The internal concentration was monitored at several time points [@Crookes2011]. The second example concerns species *Chironomus tentans*, a freshwater invertebrate, exposed to benzo-(a)-pyrene in spiked sediment during three days. Only one exposure concentration was tested with two replicates. The duration of the depuration phase was 3 days. The internal concentrations for both parent compound and its metabolite were monitored at several time points [@Schuler2003].
+To illustrate the use of package `rbioacc`, we will use two standard bioaccumulation data sets available in the package. The first example is data collected from a laboratory bioaccumulation test on fish *Oncorhynchus promelas* exposed to three different concentrations of a highly hydrophobic compound in spiked water during 49 days. There was one replicate per concentration. The duration of the depuration phase was 97 days. The internal concentration was monitored at several time points [@crookes2011estimation]. The second example concerns species *Chironomus tentans*, a freshwater invertebrate, exposed to benzo-(a)-pyrene in spiked sediment during three days. Only one exposure concentration was tested with two replicates. The duration of the depuration phase was 3 days. The internal concentrations for both parent compound and its metabolite were monitored at several time points [@Schuler2003].
 
 Environmental Risk Assessment (ERA) is based on OECD test guidelines (\textit{e.g.}, test n°305 [@OECD2012] or 315 [@OECD2008]) specifying the workflow to follow in order to obtain the bioaccumulation metrics. The bioaccumulation metrics are key decision criteria to define the capacity of a chemical substance to be bioaccumulated within organisms. This workflow can also be performed on-line with the MOSAIC web platform, especially the MOSAIC\textsubscript{bioacc} module (<https://mosaic.univ-lyon1.fr/bioacc>). In order to be in full compliance with such guidelines, the *modus operandi* with package `rbioacc` to be followed step-by-step is given below.
 
