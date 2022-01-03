@@ -58,6 +58,8 @@ test_that("predict", {
 
 test_that( "predict_stan", {
   
+  skip_on_cran()
+  
   # small test to run fast
   data("Male_Gammarus_Single")
   Male_Gammarus_Single <- Male_Gammarus_Single[Male_Gammarus_Single$replicate == 1, ]
@@ -69,12 +71,7 @@ test_that( "predict_stan", {
   modelData_MGSG <- modelData(Male_Gammarus_seanine_growth, time_accumulation = 1.417)
   fit_MGSG <- fitTK(modelData_MGSG, iter = 100, chains=2)
   data_4pred_MGSG <- data.frame(time = sort(c(0:6,1.417)), expw = 15.533)
-  
-  data("Chiro_Creuzot")
-  Chiro_Creuzot <- Chiro_Creuzot[Chiro_Creuzot$replicate == 1,]
-  modelData_CC <- modelData(Chiro_Creuzot, time_accumulation = 1.0)
-  fit_CC <- fitTK(modelData_CC, iter = 10, chains=2)
-  
+
   # Classical
   predict_MGS <- predict(fit_MGS, data_4pred_MGS, fixed_init = TRUE)
   plot(fit_MGS)
@@ -95,18 +92,11 @@ test_that( "predict_stan", {
   plot(predict_MGSG_stan, add_data = TRUE)
   plot(fit_MGSG)
   
-  
   # Extended timeline
-  fit_pred_extend <- predict_stan(fit_MGS, iter = 1000, chains = 3, time_interp = seq(0,25,0.1))
-  plot(fit_pred_extend, fit_MGS)
+  fit_pred_extend <- predict_stan(fit_MGS, data_4pred_MGS, iter = 1000, chains = 3, time_interp = seq(0,25,0.1))
+  plot(fit_pred_extend)
   
   predict_MGSG_data <- modelData_predictStan(fit_MGSG, data_4pred_MGSG, time_interp = seq(0,6,0.1))
-  object = fit_MGSG
-  data = data_4pred_MGSG
-  mcmc_size = NULL
-  fixed_init = TRUE
-  time_interp = seq(0,25,0.1)
-  
   predict_MGSG_stan_ext <- predict_stan(fit_MGSG, data_4pred_MGSG, iter = 1000, chains = 1, time_interp = seq(0,6,0.1))
   plot(predict_MGSG_stan_ext)
   plot(predict_MGSG_stan_ext, add_data = TRUE)

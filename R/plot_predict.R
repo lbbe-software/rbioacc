@@ -38,6 +38,9 @@ plot.predictTK <- function(x, ...){
 
 #' @rdname plot_predict
 #' 
+#' @param add_data logical TRUE or FALSE to add the orignal data of the fit object
+#' \code{x}
+#' 
 #' @export
 #' 
 plot.predictTKstan <- function(x, add_data=FALSE, ...){

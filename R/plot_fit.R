@@ -5,6 +5,8 @@
 #' variable in the original dataset.
 #' 
 #' @param x And object returned by fitTK
+#' @param time_interp A vector with additional time point to interpolate. 
+#' Time point of the original data set are conserved.
 #' @param \dots Additional arguments
 #' 
 #' @return a plot of class \code{ggplot}

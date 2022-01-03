@@ -183,26 +183,30 @@ predict.fitTK <- function(object, data, mcmc_size = NULL, fixed_init = TRUE, ...
 #'
 #' @rdname predict
 #' 
+#' @param time_interp A vector with additional time point to interpolate. 
+#' Time point of the original data set are conserved.
+#' @param iter Number of time steps
+#' 
 #' @export
 #'
-predict_stan <- function(object, data, mcmc_size = NULL, fixed_init = TRUE, time_interp = NULL, 
-                         alg = "Fixed_param", iter = 1000, chains = 1, ...) {
+predict_stan <- function(object, data, mcmc_size = NULL, fixed_init = TRUE,
+                         time_interp = NULL, iter = 1000, ...) {
   
   iter <- ifelse(is.null(mcmc_size), iter, mcmc_size)
 
   stanTKdata <- modelData_predictStan(object, data, mcmc_size, fixed_init, time_interp)
   
-  stanfit <- rstan::sampling(stanmodels$TK_predict, data = stanTKdata, alg=alg, iter=iter, chains=chains,  ...)
+  stanfit <- rstan::sampling(stanmodels$TK_predict, data = stanTKdata, algorithm ="Fixed_param",  ...)
   
   out <- list(stanTKdata = stanTKdata, stanfit = stanfit, originTKdata = object$stanTKdata)
   class(out) <- append("predictTKstan", class(out))
   return(out)
 }
 
-#' @rdname modelData
-#' 
-#' @export
-#' 
+# @rdname modelData
+# 
+# @export
+# 
 modelData_predictStan <- function(object, data, mcmc_size = NULL, fixed_init = TRUE, time_interp = NULL, ...){
   
   fit <- object
