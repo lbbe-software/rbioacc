@@ -2,10 +2,21 @@
 % Please edit documentation in R/predict_fit.R, R/predict_manual.R
 \name{predict.fitTK}
 \alias{predict.fitTK}
+\alias{predict_stan}
 \alias{predict_manual}
 \title{Prediction function using \code{fitTK} object}
 \usage{
 \method{predict}{fitTK}(object, data, mcmc_size = NULL, fixed_init = TRUE, ...)
+
+predict_stan(
+  object,
+  data,
+  mcmc_size = NULL,
+  fixed_init = TRUE,
+  time_interp = NULL,
+  iter = 1000,
+  ...
+)
 
 predict_manual(
   param,
@@ -27,6 +38,11 @@ predict_manual(
 columns with name in \code{expw}, \code{exps}, \code{expf} and \code{exppw}}
 
 \item{\dots}{Additional arguments}
+
+\item{time_interp}{A vector with additional time point to interpolate.
+Time point of the original data set are conserved.}
+
+\item{iter}{Number of time steps}
 
 \item{param}{A dataframe with name of parameters \code{kee}, \code{keg}, \code{ku1},
 \code{ku2}, ...,  \code{km1}, \code{km2}, ... and \code{kem1}, \code{kem2}, ...,
