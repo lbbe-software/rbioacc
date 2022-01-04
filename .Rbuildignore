@@ -10,3 +10,6 @@
 ^\.travis\.yml$
 ^\.gitignore$
 ^vignettes/Tutorial_cache$
+
+
+^paper$
