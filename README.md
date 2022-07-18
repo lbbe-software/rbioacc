@@ -1,19 +1,22 @@
-rbioacc
+[![CRAN_Status_Badge](http://www.r-pkg.org/badges/version/rbioacc)](http://cran.r-project.org/package=rbioacc)
+[![CRAN Downloads](https://cranlogs.r-pkg.org/badges/rbioacc)](https://cran.r-project.org/package=rbioacc)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+[![DOI:10.1016/j.ecoenv.2022.113875](http://img.shields.io/badge/DOI-10.1016/j.ecoenv.2022.113875-orange.svg)](https://doi.org/10.1016/j.ecoenv.2022.113875)
 
-An R package for the inference of complex toxicokinetics model
+# rbioacc
+
+Inference and Prediction of ToxicoKinetic (TK) Models
 
 
-## Development
+### Little hack
 
-### little hack
-
-- to load all internal function of a package during dev: `devtools::load_all()`
+To load all internal function of a package during dev: `devtools::load_all()`
 
 ### A lighter package build
 
 To make the package lighter, we have to remove the vignettes: see file `.Rbuildignore`
 
-### Error to recompile during package dev
+### Error to recompile during package development
 
 Sometimes, there is an Error to recompile during development after change of .stan files.
 A solution is to remove the `rbioacc` folder in R repository of the win-library (see the path written in the error message).
