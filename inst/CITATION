@@ -1,14 +1,14 @@
 citHeader("To cite rbioacc in publications use:")
 
-citEntry(
-  entry        = "Article",
+bibentry(
+  bibtype      = "Article",
   title        = "rbioacc: An R-package to analyze toxicokinetic data",
-  author       = personList(as.person("Aude Ratier"),
-                            as.person("Virgile Baudrot"),
-                            as.person("Miléna Kaag"),
-                            as.person("Aurélie Siberchicot"),
-                            as.person("Christelle Lopes"),
-                            as.person("Sandrine Charles")),
+  author       = c(person("Aude Ratier"),
+                   person("Virgile Baudrot"),
+                   person("Miléna Kaag"),
+                   person("Aurélie Siberchicot"),
+                   person("Christelle Lopes"),
+                   person("Sandrine Charles")),
   journal      = "Ecotoxicology and Environmental Safety",
   year         = "2022",
   doi          = "10.1016/j.ecoenv.2022.113875",
