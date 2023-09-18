@@ -1,4 +1,4 @@
-[![CRAN_Status_Badge](http://www.r-pkg.org/badges/version/rbioacc)](http://cran.r-project.org/package=rbioacc)
+[![CRAN_Release_Badge](http://www.r-pkg.org/badges/version-ago/rbioacc)](http://cran.r-project.org/package=rbioacc)
 [![CRAN Downloads](https://cranlogs.r-pkg.org/badges/rbioacc)](https://cran.r-project.org/package=rbioacc)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![DOI:10.1016/j.ecoenv.2022.113875](http://img.shields.io/badge/DOI-10.1016/j.ecoenv.2022.113875-orange.svg)](https://doi.org/10.1016/j.ecoenv.2022.113875)
