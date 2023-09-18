@@ -9,6 +9,7 @@
 ^\.gitlab-ci\.yml$
 ^\.travis\.yml$
 ^\.gitignore$
+^\.github$
 ^vignettes/Tutorial_cache$
 
 
