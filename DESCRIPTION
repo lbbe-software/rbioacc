@@ -1,8 +1,8 @@
 Package: rbioacc
 Title: Inference and Prediction of ToxicoKinetic (TK) Models
-Version: 1.1-0
+Version: 1.1-2
 Authors@R: c(
-    person("Virgile", "Baudrot", role = "aut", email = "virgile.baudrot@posteo.net"),
+    person("Virgile", "Baudrot", role = c("aut", "cre"), email = "virgile.baudrot@posteo.net"),
     person("Sandrine", "Charles", role = "aut"),
     person("Ophélia", "Gestin", role = "ctb"),
     person("Miléna", "Kaag", role = "aut"),
@@ -10,7 +10,7 @@ Authors@R: c(
     person("Gauthier", "Multari", role = "ctb"),
     person("Alain", "Pavé", role = "ctb"),
     person("Aude", "Ratier", role = "aut"),
-    person("Aurélie", "Siberchicot", role = c("aut", "cre"), email = "aurelie.siberchicot@univ-lyon1.fr")
+    person("Aurélie", "Siberchicot", role = "ctb", email = "aurelie.siberchicot@univ-lyon1.fr")
     )
 Description: The MOSAICbioacc application is a turnkey package providing bioaccumulation
     factors (BCF/BMF/BSAF) from a toxicokinetic (TK) model fitted to
