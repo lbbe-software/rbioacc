@@ -17,8 +17,8 @@ Description: The MOSAICbioacc application is a turnkey package providing bioaccu
     accumulation-depuration data. It is designed to fulfil the requirements
     of regulators when examining applications for market authorization of active
     substances. See Ratier et al. (2021) <doi:10.1101/2021.09.08.459421>.
-URL: https://github.com/aursiber/rbioacc
-BugReports: https://github.com/aursiber/rbioacc/issues
+URL: https://github.com/lbbe-software/rbioacc
+BugReports: https://github.com/lbbe-software/rbioacc/issues
 License: MIT + file LICENSE
 Encoding: UTF-8
 LazyData: true
